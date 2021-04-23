@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        background-color: white;
+    }
+
+    label {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    #signup {
+        background-color: #ffffff;
+        width: 87vw;
+        height: 68vh;
+        margin: 50px auto;
+        padding: 50px;
+        border: 1px solid #5555;
+    }
+
+    button {
+        background-color: aqua;
+        padding: 10px;
+        border: none;
+    }
+
+    .wrapper {
+        margin: 30px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <form id="signup">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <label for="number">Number:</label>
+            <input type="number" name="phone no." placeholder="Enter your Phone No.">
+            <label for="email" name="email">Email:</label>
+            <input type="email" placeholder="Enter Email">
+            <label for="image">Upload image:</label>
+            <input type="file" name="image" placeholder="Upload document" accept="image/*">
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
