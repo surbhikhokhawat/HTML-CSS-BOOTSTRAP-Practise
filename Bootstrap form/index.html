@@ -1,23 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 
 <body>
-  <h1>Bootstrap Registeration Forms</h1>
-  <form>
-    <div class="form-group">
-      <label for="Email">Email address</label>
-      <input type="email" class="form-control" id="Email" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="Password">Password</label>
-      <input type="password" class="form-control" id="Password" placeholder="Password">
-    </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="check-input" id="Check">
-      <label class="check-label" for="Check">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  <div class="container">
+    <h2>Bootstrap User Registeration form</h2>
+    <form>
+      <div class="form-group">
+        <i class="glyphicon glyphicon-user"></i>
+        <label for="fname">First Name:</label>
+        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="firstname">
+      </div>
+      <div class="form-group">
+        <i class="glyphicon glyphicon-user"></i>
+        <label for="lname">Last Name:</label>
+        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lastname">
+      </div>
+      <div class="form-group">
+        <span class="glyphicon glyphicon-envelope"></span>
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <i class="glyphicon glyphicon-lock"></i>
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+      <div class="form-group">
+        <i class="glyphicon glyphicon-lock"></i>
+        <label for="Confirmpwd">Confirm Password:</label>
+        <input type="password" class="form-control" id="Confirmpwd" placeholder="Retype password to confirm" name="pwd">
+      </div>
+      <div class="form-group">
+        <span class="glyphicon glyphicon-earphone"></span>
+        <label for="Phone">Phone No. :</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone no." name="email">
+      </div>
+      <div class="form-group">
+        <span class="glyphicon glyphicon-home"></span>
+        <label for="city">Select Current City :</label>
+        <select id="city">
+          <option>Ajmer</option>
+          <option>Ahemdabad</option>
+          <option>Bhilwara</option>
+          <option>Bangalore</option>
+          <option>Delhi</option>
+          <option>Goa</option>
+          <option>Jaipur</option>
+          <option>Udaipur</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <span class="glyphicon glyphicon-home"></span>
+        <label for="state">Select Current State :</label>
+        <select id="state">
+          <option>Andhra Pradesh</option>
+          <option>Arunachal Pradesh </option>
+          <option>Assam</option>
+          <option>Bihar</option>
+          <option>Chhattisgarh</option>
+          <option>Gujarat</option>
+          <option>Haryana</option>
+          <option>Maharashtra</option>
+          <option>Punjab</option>
+          <option>Rajasthan</option>
+          <option>Sikkim</option>
+          <option>Tamil Nadu</option>
+          <option>Uttar Pradesh</option>
+          <option>West Bengal</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="Code">Zip Code :</label>
+        <input type="text" class="form-control" id="Code" placeholder="Enter Zip Code" name="Code">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember">I accept the <b>Terms Of Use</b> & <b>Privacy Policy</b></label>
+      </div>
+      <button type="submit" class="btn btn-default">Register Now</button>
+    </form>
+  </div>
 </body>
+
 </html>
